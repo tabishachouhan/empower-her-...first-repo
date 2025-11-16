@@ -1,11 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Domino's layout</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            
+        }
+        body {
+           font-family: inter,arial,sans-serif;
+           background: #fff;
+           color: #111827;
+           
+        }
+        .page{
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+        h1{
+            font-size: 24px;
+            margin-bottom: 18px;
+            text-align: center;
+            color:#ef4a24;
+
+        }
+        
+        
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .card{
+            background: #f34923;
+            color:white;
+            padding:18px;
+            border-radius: 8px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height:320px;
+
+        
+        }
+        .card .media{
+            width:100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 12px;
+
+        }
+        .card img{
+            width: 120px;
+            height:120px;
+            object-fit:cover;
+            border-radius: 999px;
+            border: 4px solid rgba(255,255,255,0.15);
+            display: block;
+        }
+        
+        .card h3{
+            
+            margin: 8px 0;
+            font-size: 20px;
+            text-align: center;
+
+        }
+        .card p{
+            font-size: 14px;
+            line-height: 1.4;
+            color: rgba(255,255,255,0.15);
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .cta{
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 8px;
+        }
+        .btn{
+            
+            background: white;
+            color: red;
+            
+            padding: 10px 16px;
+            border-radius: 5px;
+            
+            font-weight: 700;
+            cursor:pointer;
+            text-transform: uppercase;
+            border: 0;
+            cursor:pointer;
+        
+        }
+        @media(max-width:1000px){
+            .page{padding:20px;
+            max-width: 920px; }
+            .grid {grid-template-columns: repeat(2,1fr); }
+        @media(max-width:600px){
+            .grid{
+                grid-template-columns: 1fr;
+            }
+            .card{min-height: auto;padding:16px; }
+            .card img{width:100px;
+            height:100px; }
+        }
+        .explore-container{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            text-align: center;
+            gap:30px;
+
+        }
+        
+        .mobile-area{
+            text-align:center;
+        }
+        .mobile-area img{
+            width: 180px;
+            margin:10px;
+            display:block;
+            margin-left:auto;
+            margin-right: auto;
+
+        }
+        .download-buttons img{
+            width: 160px;
+            margin-top: 15px;
+            cursor:pointer;
+
+        }
+        .explore-tittle{
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+        .explore-grid{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 15px;
+        }
+        .explore-card{
+            border: 2px solid #ccc;
+            padding:15px;
+            border-radius:6px;
+            font-size:14px;
+
+        }
+        .explore-card h4{
+            margin: 5px 0;
+            font-size:18px;
+            font-weight: bold;
+        }
+        .explore-card p{
+            margin: 10px 0;
+            color: gray;
+
+        }
+        .linl{
+            color :red;
+            font-weight:bold;
+        }
+
+
+          
+        
+    </style>
 </head>
 <body>
     
+            
+    
+    <div class="page">
+           
+           <div class="grid">
+            <article class="card">
+                <div>
+                    <div class="media">
+            <img src="https://www.superhealthykids.com/wp-content/uploads/2023/05/best-veggie-pizza-6-2.jpg">
+            <p>
+                 a delight for veggie lover! choose from our wide range of pizza,its softer and tastier
+            </p>
+            </div>
+            <div class="cta">
+            <button class="btn">VIEW ALL</button>
+            
+    </div>
+    </article>
+        <div class="page">
+           
+           <div class="grid">
+            <article class="card">
+                <div>
+                    <div class="media">
+            <img src="https://www.superhealthykids.com/wp-content/uploads/2023/05/best-veggie-pizza-6-2.jpg">
+            <p>
+                 Inglge in our mouth-watering pizza mania range,perfect anser to all your food craving
+            </p>
+            </div>
+            <div class="cta">
+            <button class="btn">VIEW ALL</button>
+     
+           
+           
+
+    
+           
+    </div>
+    </article>
+    <article class="card">
+                <div>
+                    <div class="media">
+            <img src="https://www.superhealthykids.com/wp-content/uploads/2023/05/best-veggie-pizza-6-2.jpg">
+            <p>
+                 Inglge in our mouth-watering pizza mania range,perfect anser to all your food craving
+            </p>
+            </div>
+            <div class="cta">
+            <button class="btn">VIEW ALL</button>
+     
+            
+    </div>
+    </article>
+    <div class="explore-container">
+        <div class="mobile area">
+            <img src="https://coding-platform.s3.amazonaws.com/dev/lms/tickets/48f2fc25-38f4-4d25-a878-78f15988b371/kXSpyg2iCHrCEljP.png" alt="mobile app">
+            <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%202.47.09%20PM_558991.png">
+            img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%202.47.43%20PM_652243.png">
+            </div>
 </body>
 </html>
