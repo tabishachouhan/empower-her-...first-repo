@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+        .card {
+            width: 300px;
+            height: 400px;
+            padding: 20px;
+            margin: auto;
+            margin-top: 40px;
+            border: 2px solid black;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            background: white;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="card">
+        <img src="data:image/png;base64,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" class="profile-img" alt="Profile">
+        <h2>Tabisha Chouhan</h2>
+        <p>Web Developer | Tech Enthusiast</p>
+    </div>
+
+</body>
+</html>
